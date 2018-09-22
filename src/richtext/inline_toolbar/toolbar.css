@@ -1,0 +1,21 @@
+.toolbarContainer{
+  position: fixed;
+  z-index: 10000;
+  display: grid;
+  grid-auto-flow: column;
+  padding: 1rem;
+  border-radius: 3px;
+  background: rgb(var(--white));
+  box-shadow: var(--shadow);
+}
+
+.toolbarContainer:after{
+  content: "";
+  position: absolute;
+  left: calc(50% - 0.5rem);
+  top:100%;
+  border-top: 1rem solid rgb(var(--white));
+  border-right: 1rem solid transparent;
+  border-left: 1rem solid transparent;
+  filter: drop-shadow(1px,1px,1px, rgb(var(--white)));
+}

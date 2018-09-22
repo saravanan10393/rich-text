@@ -1,0 +1,30 @@
+.alignContainer{
+  position: relative;
+}
+
+.alignContainer ul{
+  margin-left: 0;
+}
+
+.alignList{
+  position: absolute;
+  top: 100%;
+  background: rgb(var(--white));
+  left: 0;
+  box-shadow: var(--shadow);
+  z-index: 5;
+}
+
+.alignList li{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+.alignList li:hover,
+.alignList li:hover{
+  background: rgb(var(--pale-grey));
+}

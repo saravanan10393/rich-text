@@ -1,0 +1,21 @@
+.videoButton{
+  position: relative;
+}
+
+.videoBox{
+  position: absolute;
+  width: 7rem;
+  padding: 1rem 1.5rem;
+  background: rgb(var(--white));
+  top: 100%;
+  right: 0;
+  box-shadow: var(--shadow);
+  width: 25rem;
+  z-index: 5;
+}
+
+.videoBox input{
+  border: none;
+  width: 100%;
+  font-size: 1.4rem;
+}

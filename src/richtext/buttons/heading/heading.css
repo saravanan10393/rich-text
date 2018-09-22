@@ -1,0 +1,27 @@
+.headingContainer{
+  position: relative;
+}
+
+.headingContainer ul{
+  margin-left: 0;
+  min-width: 20rem;
+}
+
+.headingList{
+  position: absolute;
+  top: 100%;
+  background: rgb(var(--white));
+  left: 0;
+  box-shadow: var(--shadow);
+  z-index: 5;
+}
+
+.headingList li{
+  min-width: 4rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.headingList li:hover{
+  background: rgb(var(--pale-grey));
+}

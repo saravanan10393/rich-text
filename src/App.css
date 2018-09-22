@@ -1,0 +1,12 @@
+.feedContainer{
+  display: grid;
+  grid-template-rows: 500px 1fr; 
+  align-items: center;
+  justify-items: center;
+}
+
+.editor {
+  border: 1px solid #ddd;
+  min-height: 30rem;
+  min-width: 50rem;
+}

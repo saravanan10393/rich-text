@@ -1,0 +1,121 @@
+.editorContainer{
+  position: relative;
+}
+
+.richTextEditor{
+  overflow-y: auto;
+  will-change: contents;
+  /* border: 1px solid rgb(var(--pale-grey)); */
+  /* padding: 1rem; */
+}
+
+.richTextEditor ul,
+.richTextEditor ol{
+  list-style: initial;
+}
+
+.toolbar{
+  display: flex;
+  grid-column-gap: 10px;
+  justify-content: flex-end;
+  background: rgb(var(--pale-grey));
+}
+
+.icon{
+  text-align: center;
+  flex: 0 0 3.4rem;
+  height: 3.4rem;
+  border: none;
+  cursor: pointer;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+}
+
+.toolbar .icon svg{
+  fill: rgb(var(--dusk));
+}
+
+.icon:hover,
+.icon.active{
+  background: rgb(var(--pale-grey));
+}
+
+.blockquote{
+  border-left: 5px solid rgb(var(--pale-grey));
+}
+
+.editorContainer ul,
+.editorContainer ol{
+  margin-left: 1.5rem;
+}
+
+.editorContainer a{
+  text-decoration: underline;
+  color: rgb(var(--dodger-blue));
+  cursor: pointer;
+}
+
+.selected{
+  border: 1px solid rgb(var(--dusk));
+}
+
+.inverseIcon{
+ transform: rotate(180deg);
+}
+
+.hide{
+  display: none;
+}
+
+.image {
+  width: 100% !important;
+  height: 100% !important;
+  display: inherit;
+  object-fit: cover;
+  object-position: 50% 50%;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.placeholder svg,
+.inlineMenu svg{
+  fill: #505978 !important;
+}
+
+.inlineMenu{
+  position: relative;
+  top: -8rem;
+  display: flex;
+  background: rgb(var(--white));
+  border-radius: 3px;
+  padding: 0.5rem;
+  box-shadow: var(--shadow);
+}
+
+.inlineMenu:after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 1rem);
+  border-top: 1rem solid rgb(var(--white));
+  border-right: 1rem solid transparent;
+  border-left: 1rem solid transparent;
+  filter: drop-shadow(1px,1px,1px, rgb(var(--white)));
+}
+
+.inlineMenu .menuIcon{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+.inlineMenu .menuIcon:hover{
+  background: rgb(var(--pale-grey));
+}

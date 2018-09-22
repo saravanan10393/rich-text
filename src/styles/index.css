@@ -1,0 +1,76 @@
+@import './reset.css';
+
+html {
+  --white:255, 255, 255;
+  --duck-egg-blue:249, 251, 254;
+  --pale-grey:230, 234, 238;
+  --bluey-grey: 150, 162, 186;
+  --dusk: 80, 89, 120;
+  --dark-persian-blue: 54, 52, 76;
+  --dodger-blue: 59, 165, 255;
+  --medium-green: 55, 177, 72;
+  --medium-pink: 238, 56, 151;
+  --red-pink: 243, 64, 93;
+  --purply: 142, 68, 173;
+  --orangey-yellow: 255, 183, 33;
+  --dark-gray: 17, 17, 24;
+  /* boxshadow variable */
+  --shadow: 0px 2px 25px 0 rgba(17, 17, 24, 0.12);
+}
+
+html,body, #root {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100%;
+  font-size: 10px;
+}
+
+#root{
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+  line-height: initial;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  line-height: initial;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: initial;
+}
+
+h5 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+h6 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: initial;
+}
